@@ -1,0 +1,128 @@
+.section-three {
+    margin-top: 8%;
+    margin-bottom: 200px;
+    header {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                .col-lg-4 {
+                    h1 {
+                        font-family: "Kanit", sans-serif;
+                    }
+                }
+                .col-lg-3 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .sec-three-more {
+                        a {
+                            color: black;
+                            font-size: $text-size;
+                            font-family: "Kanit", sans-serif;
+                            text-decoration: none;
+                            letter-spacing: 3px;
+                        }
+                    }
+                    .icons {
+                        a {
+                            i {
+                                border: 1px solid rgb(153, 153, 153);
+                                padding: $text-size-5;
+                                color: $text-color-2;
+                                font-size: $text-size-3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        margin-right: 5%;
+
+        .row {
+            .col-lg-2 {
+                    position: relative;
+                    .about-product {
+                        position: absolute;
+                        left: 45%;
+                        top: 105%;
+                        text-align: center;
+                        p {
+                            height: 10px;
+                        }
+                        .count {
+                            font-weight: bold;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        top: 7%;
+                        right: -21%;
+                        padding: $span-padding;
+                        background-color: $helper-color-4;
+                        font-size: $text-size;
+                        color: $text-color-1;
+                    }
+                    .sec-three-photos {
+                        width: 270px;
+                        position: relative;
+                        &:hover .about_info {
+                            display: block;
+                            animation-name: animate__bounceInUp;
+                            animation-duration: 0.4s;
+                            animation-fill-mode: forwards;
+                        }
+                        img {
+                            max-width: 100%;
+                        }
+                        .about_info {
+                            position: absolute;
+                            top: 80%;
+                            left: 27%;
+                            display: none;
+                            a {
+                                border: 1px solid white;
+                                background-color: $text-color-1;
+                                color: $about_photo_icons_color;
+                                border-radius: 50%;
+                                padding: $about_photo_icons_padding;
+                                @include setTransitions(all, 0.3s);
+                                .for-eye {
+                                    display: none;
+                                }
+                                .fa-eye {
+                                    &:hover .for-eye {
+                                        position: absolute;
+                                        top: 23%;
+                                        left: 23%;
+                                        display: block;
+                                    }
+                                }
+                                &:hover {
+                                    background-color: $text-color-2;
+                                    color: $text-color-1;
+                                    border-color: $text-color-2;
+                                }
+                                i {
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    // }
+}
+
+@keyframes animate__bounceInUp {
+    from {
+        top: 80%;
+    }
+    to {
+        top: 74%;
+    }
+}

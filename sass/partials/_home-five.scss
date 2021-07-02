@@ -1,0 +1,45 @@
+.sec-five{
+    margin-bottom: 100px;
+    .row{
+        background: url("../../img/cta.jpg") top center/cover no-repeat;
+        background-color: #000;
+        padding: 150px 0;;
+        background-size: cover;
+        height: 500px;
+        .col-lg-5{
+
+            .title-five{
+                text-align: center;
+                color: $helper-color-4;
+                height: 8px;
+                letter-spacing: $letter-spacings;
+                font-family: "Kanit", sans-serif;
+
+            }
+            .info-five{
+                color: $helper-color;
+                text-align: center;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+                color: $helper-color;
+                font-family: "Kanit", sans-serif;
+            }
+            button{
+                border: 0;
+                font-size: $text-size-5;
+                margin-left: 34%;
+                @include setTransitions(all, 0.6s);
+                font-weight: 700;
+                font-family: "futura-pt-demi", sans-serif;
+                letter-spacing: $letter-spacings;
+                padding: $button-paddings;
+                &:hover {
+                    color: $text-color-1;
+                    background-color: $text-color-2;
+                }
+            }
+        }
+    }
+}

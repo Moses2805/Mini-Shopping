@@ -1,0 +1,4 @@
+@mixin setTransitions($type, $second) {
+    -webkit-transition: $type $second;
+    transition: $type $second;
+}

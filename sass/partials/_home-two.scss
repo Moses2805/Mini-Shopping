@@ -1,0 +1,35 @@
+.section-two {
+    .row {
+        margin-right: 7%;
+        .col-lg-3:nth-child(2) {
+            margin-top: 10%;
+        }
+        .col-lg-3:nth-child(1),
+        .col-lg-3:nth-child(3) {
+            margin-top: 13%;
+        }
+        .sec-two-photos {
+            width: 330px;
+            position: relative;
+            .sec-two-info {
+                position: absolute;
+                bottom: 12%;
+                left: 13%;
+                background-color: $text-color-1;
+                padding: $sec-two-info-paddings;
+                width: 195px;
+                p{
+                    font-weight: 700;
+                    height: 10px;
+                }
+                a{
+                    font-size: $text-size-5;
+                }
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+
+    }
+}
