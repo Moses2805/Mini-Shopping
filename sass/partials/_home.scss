@@ -1,0 +1,150 @@
+.section-one {
+    header {
+        .navbar {
+            height: $navbar-height;
+            .info {
+                color: $text-color-1;
+                font-size: $text-size;
+                padding-top: $text-top-padding;
+            }
+        }
+    }
+}
+
+.section-one {
+    header {
+        .row {
+            .col-lg-4 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .open {
+                    .stream {
+                        color: $helper-color-2;
+                        font-size: $icon-size;
+                    }
+                }
+                .search {
+                    position: relative;
+                    .search_for {
+                        position: absolute;
+                        top: 9px;
+                        left: 20px;
+                        color: $helper-color-3;
+                        a {
+                            color: $helper-color-3;
+                        }
+                    }
+                    form {
+                        input {
+                            padding: $helper-padding-1;
+                            width: 220px;
+                            background-color: $helper-color;
+                            border-color: $helper-color;
+                            border-radius: 45px;
+                            color: $helper-color-3;
+                            border: 0;
+                            font-size: $text-size;
+                            padding-left: 50px;
+                        }
+                    }
+                }
+            }
+            .col-lg-6 {
+                .direction {
+                    li {
+                        display: inline;
+                        margin-right: 15px;
+                        a {
+                            text-decoration: none;
+                            font-size: $text-size-2;
+                            font-weight: bold;
+                            color: $text-color-2;
+                        }
+                    }
+                }
+                .site_name {
+                    a {
+                        color: $text-color-2;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .col-lg-2 {
+                .more_info {
+                    li {
+                        display: inline;
+                        margin-right: 15px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: $text-size-3;
+                        color: $helper-color-2;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .row {
+            .col-lg-12 {
+                .img {
+                    position: relative;
+
+                    img {
+                        max-width: 100%;
+                    }
+                    h1 {
+                        position: absolute;
+                        left: 17%;
+                        top: 20%;
+                        color: $text-color-1;
+                        font-size: $text-size-4;
+                        font-weight: bold;
+                    }
+                    p {
+                        position: absolute;
+                        left: 6.2%;
+                        top: 38%;
+                        writing-mode: vertical-rl;
+                        color: $text-color-1;
+                        font-size: $icon-size;
+                        letter-spacing: 5px;
+                        font-weight: bold;
+                    }
+                    p::before {
+                        position: absolute;
+                        content: "";
+                        left: 45%;
+                        top: -38%;
+                        width: 1px;
+                        background: #fff;
+                        height: 70px;
+                    }
+                    button {
+                        position: absolute;
+                        bottom: 4%;
+                        left: 17.3%;
+                        border: 0;
+                        font-size: $text-size-5;
+                        @include setTransitions(all, 0.7s);
+                        font-weight: 700;
+                        font-family: "futura-pt-demi", sans-serif;
+                        letter-spacing: 2px;
+                        padding: $button-paddings;
+
+                        &:hover {
+                            color: $text-color-1;
+                            background-color: $text-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    display: block;
+}
